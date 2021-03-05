@@ -14,6 +14,11 @@ img {
   width: 100%;
 }
 
+.swiper-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .header {
   max-width: 1170px;
   margin: auto;
@@ -60,5 +65,10 @@ img {
 .navbar__link {
   text-decoration: none;
   color: #183B56;
+}
+
+.hero-container {
+  max-width: 1283px;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
