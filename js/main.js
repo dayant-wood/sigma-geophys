@@ -13,5 +13,10 @@ const swiper = new Swiper('.swiper-container', {
     enabled: true,
     onlyInViewport: false,
   },
+
+   autoplay: {
+   delay: 5000,
+   disableOnInteraction: true,
+ },
   
 });
