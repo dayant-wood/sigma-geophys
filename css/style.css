@@ -104,7 +104,7 @@ img {
   left: 8%;
 }
 
-.hero__button {
+.hero__link {
   padding: 15px 30px;
   font-style: normal;
   font-weight: normal;
@@ -117,5 +117,136 @@ img {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+.about {
+  padding-top: 77px;
+  padding-bottom: 77px;
+}
+
+.about-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.about__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #183B56;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.about__wrapper--images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__wrapper--text {
+  max-width: 405px;
+}
+
+.about__description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 27px;
+  color: #48555B;
+  margin-bottom: 30px;
+}
+
+.about__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  color: #48555B;
+}
+
+.about__name {
+  color: #2291E6;
+  text-transform: uppercase;
+}
+
+.about__image-wrapper {
+  position: relative;
+  width: 177px;
+  height: 224px;
+  margin-right: 30px;
+}
+
+.about__link {
+  position: absolute;
+  top: 25px;
+  left: 5px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subscribe {
+  padding: 182px 0px 100px 0px;
+  background: url("../img/subscribe-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.subscribe-container {
+  margin: auto;
+  max-width: 350px;
+  text-align: center;
+}
+
+.subscribe__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #183B56;
+  background: rgba(255, 255, 255, 0.76);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.subscribe__link {
+  padding: 11px 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #183B56;
 }
 /*# sourceMappingURL=style.css.map */
