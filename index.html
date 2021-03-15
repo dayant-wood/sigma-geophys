@@ -10,6 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -33,9 +38,9 @@
             <li class="navbar__item">
               <a href="#" class="navbar__link">Наши технологии</a>
             </li>
-            <li class="navbar__item">
+            <!-- <li class="navbar__item">
               <a href="#" class="navbar__link">Отзывы</a>
-            </li>
+            </li> -->
             <li class="navbar__item">
               <a href="#" class="navbar__link">Контакты</a>
             </li>
@@ -43,7 +48,7 @@
         </nav>
       </div>
     </header>
-
+    <!--.header-->
     <section class="hero">
       <div class="hero-container">
         <div class="swiper-container">
@@ -64,20 +69,20 @@
             </div>
             <div class="swiper-slide hero__slide">
               <img src="img/hero-bg-3.jpg" alt="" class="hero__image" />
-              <h1 class="hero__title">Мы открыты к сотрудничеству!</h1>
+              <h1 class="hero__title">Открыты к сотрудничеству!</h1>
             </div>
           </div>
 
-          <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
       </div>
     </section>
+    <!--.hero-->
 
     <section class="about">
       <div class="about-container">
-        <h1 class="about__title">О нас</h1>
+        <h3 class="about__title">О нас</h3>
         <div class="about__wrapper">
           <div class="about__wrapper--text">
             <p class="about__description">
@@ -111,13 +116,103 @@
         </div>
       </div>
     </section>
+    <!--.about-->
 
     <section class="subscribe">
       <div class="subscribe-container">
-        <h1 class="subscribe__title">Мы всегда открыты к сотрудничеству!</h1>
+        <h3 class="subscribe__title">Мы всегда открыты к сотрудничеству!</h3>
         <a href="#" class="subscribe__link">СВЯЗАТЬСЯ С НАМИ</a>
       </div>
     </section>
+    <!--.subscribe-->
+
+    <section class="geography">
+      <div class="geography-container">
+        <h3 class="geography__title">ГЕОГРАФИЯ ДЕЯТЕЛЬНОСТИ</h3>
+        <img src="img/geography-bg.png" alt="" />
+      </div>
+    </section>
+    <!--.geography-->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer__menu">
+          <div class="footer__info">
+            <h3 class="footer__title footer__info--title">Компания</h3>
+            <a href="#" class="footer__info footer__info--link">
+              <img class="footer__logo" src="img/logo-white.png" alt="" />
+            </a>
+            <span class="footer__text">
+              ООО "СИГМА" — геофизическая компания, выполняющая
+              микросейсмические исследования методом МСИ, с целью оценки
+              нефтегазоносности геологических объектов.</span
+            >
+          </div>
+
+          <div class="footer__nav">
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Юридический адрес</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  Российская Федерация, Республика Татарстан, 420127, г. Казань,
+                  ул. Дементьева 70А, оф.113
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Реквизиты</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  ИНН: 1661040597 <br />
+                  КПП: 166101001 <br />
+                  Расч.счет: 40702810362000003739 в отделении «Банк Татарстан»
+                  №8610 <br />
+                  БИК: 049205603 <br />
+                  Кор.счет: 30101810600000000603 в РКЦ НБ РТ г.Казани <br />
+                  ОГРН: 1141690034474 <br />
+                  ОКПО: 54445052
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__menu-group">
+              <h3 class="footer__menu-title">Контакты</h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <div class="footer__item-wrapper">
+                    <img src="img/map-icon.svg" class="footer__icon" alt="" />
+                  </div>
+                  ООО «СИГМА», а/я 26, 420073, г. Казань, ул. Аделя Кутуя, д.46
+                </li>
+                <li class="footer__item">
+                  <div class="footer__item-wrapper">
+                    <img
+                      src="img/contact-phone-call.svg"
+                      class="footer__icon"
+                      alt=""
+                    />
+                  </div>
+                  <a class="footer__link" href="tel:78432122054"
+                    >Тел/факс: +7 (843) 212 20 54</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <div class="footer__item-wrapper">
+                    <img src="img/email.svg" class="footer__icon" alt="" />
+                  </div>
+                  <a class="footer__link" href="mailto:info@sigma-geophys.com"
+                    >info@sigma-geophys.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--.footer-->
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>

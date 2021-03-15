@@ -3,6 +3,8 @@
           box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
   margin: 0;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
 }
 
 h1, h2, h3, h4 {
@@ -132,7 +134,7 @@ img {
 .about__title {
   font-style: normal;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 33px;
   text-decoration: underline;
   text-transform: uppercase;
@@ -248,5 +250,125 @@ img {
   text-decoration: none;
   color: #fff;
   background-color: #183B56;
+}
+
+.geography {
+  padding: 45px 0 30px 0;
+}
+
+.geography-container {
+  max-width: 1170px;
+  margin: auto;
+  text-align: center;
+}
+
+.geography__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: #183B56;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.footer {
+  padding: 70px 0 70px 0;
+  background-color: #183B56;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-container {
+  max-width: 1110px;
+  margin: auto;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.footer__menu-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer__logo {
+  width: 113px;
+}
+
+.footer__icon {
+  width: 15px;
+}
+
+.footer__info {
+  -ms-flex-preferred-size: 260px;
+      flex-basis: 260px;
+}
+
+.footer__nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (250px)[3];
+      grid-template-columns: repeat(3, 250px);
+}
+
+.footer__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.846154px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__text {
+  display: block;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 15px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer__item {
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__item-wrapper {
+  min-width: 25px;
+}
+
+.footer__link {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
