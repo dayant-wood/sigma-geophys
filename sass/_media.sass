@@ -1,0 +1,210 @@
+@media (max-width: 1200px)
+  .header-container,
+  .hero-container,
+  .about-container,
+  .geography-container,
+  .footer-container
+    max-width: 92%
+  .hero
+    &__title
+      font-size: 30px
+      // max-width: 800px
+    &__link
+      padding: 8px 18px
+      font-size: 15px
+
+@media (max-width: 992px)
+  .header-container,
+  .hero-container,
+  .about-container,
+  .geography-container,
+  .footer-container
+    max-width: 90%
+  .header
+    &__logo
+      width: 140px
+      height: 58px
+  .navbar
+    &__list
+      font-size: 14px
+  .hero
+    &__title
+      // max-width: 700px
+      font-size: 25px
+    &__link
+      padding: 8px 18px
+      font-size: 15px
+    &__container
+      height: 500px
+  .about
+    &__wrapper
+      flex-direction: column
+      &--text
+        display: flex
+        max-width: 100%
+        margin-right: 0
+      &--images
+        width: 100%
+        justify-content: center
+        margin-top: 30px
+    &__description
+      margin-right: 40px
+      font-size: 18px
+  .footer
+    &__nav
+      grid-template-columns: repeat(2, 50%)
+      row-gap: 40px
+    &__text
+      font-size: 13px
+      width: 300px
+
+@media (max-width: 767px)
+  body
+    padding-top: 100px
+  .header
+    padding: 20px 0 20px 0
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    z-index: 99
+    background-color: #fff
+    &__logo
+      width: 100px
+      height: 40px
+
+  .navbar
+    &__list
+      font-size: 13px
+      display: none
+  .menu-button
+    display: flex
+    width: 16px
+    height: 11px
+    padding: 0
+    align-items: center
+    flex-direction: column
+    justify-content: space-between
+    border: none
+    cursor: pointer
+    outline: none
+    background-color: #fff
+    &--line
+      background-color: $primary
+      width: 16px
+      height: 1px
+  .hero
+    &__title
+      // max-width: 560px
+      font-size: 25px
+    &__link
+      padding: 6px 16px
+      font-size: 13px
+      max-width: 130px
+  .about
+    padding-top: 50px
+    padding-bottom: 50px
+    &__title
+      font-size: 22px
+    &__description
+      font-size: 16px
+    &__text
+      font-size: 12px
+    &__image
+      &-wrapper
+        max-width: 140px
+        height: 200px
+    &__link
+      font-size: 19px
+
+  .subscribe
+    &__title
+      font-size: 25px
+    &__link
+      padding: 9px 2px
+      font-size: 10px
+  .geography
+    &__title
+      font-size: 22px
+
+  .footer
+    &__text
+      max-width: 260px
+
+@media ( max-width: 576px )
+  .hero
+    &__title
+      font-size: 18px
+      // max-width: 415px
+    &__link
+      padding: 4px 12px
+      font-size: 10px
+
+    &__container
+      height: 350px
+    &__image
+      height: 500px
+  .about
+    &__title
+      font-size: 18px
+      margin-bottom: 30px
+    &__description
+      font-size: 12px
+    &__text
+      font-size: 10px
+    &__link
+      font-size: 16px
+    &__image-wrapper
+      max-width: 120px
+      height: 180px
+  .geography
+    &__title
+      font-size: 18px
+  .footer
+    &__menu-title
+      font-size: 14px
+    &__item
+      font-size: 12px
+    &__text
+      font-size: 12px
+      max-width: 230px
+
+@media ( max-height: 487px )
+  .mobile
+    overflow: auto
+    max-height: 100%
+
+@media ( max-width: 476px )
+  .footer
+    &__nav
+      grid-template-columns: repeat(1, 250px)
+      row-gap: 40px
+
+@media ( max-width: 390px )
+  .header
+    &__logo
+      width: 80px
+      height: 30px
+  .hero
+    &__swiper-button
+      width: 10px
+      height: 10px
+    &__title
+      font-size: 15px
+    &__link
+      padding: 2px 6px
+      font-size: 10px
+      max-width: 100px
+  .about
+    &__description
+      margin-right: 0
+    &__wrapper
+      &--text
+        flex-wrap: wrap
+    &__link
+      font-size: 11px
+      top: 5px
+      left: 3px
+    &__image
+      &-wrapper
+        margin-right: 15px

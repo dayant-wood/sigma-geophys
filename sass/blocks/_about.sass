@@ -9,7 +9,7 @@
     font-weight: bold
     font-size: 24px
     line-height: 33px
-    text-decoration: underline
+    // text-decoration: underline
     text-transform: uppercase
     color: $primary
     text-align: center
@@ -17,33 +17,37 @@
   &__wrapper
     display: flex
     justify-content: space-between
-    align-items: end
+    align-items: center
     &--images
       display: flex
       justify-content: space-between
       align-items: center
+      filter: drop-shadow(15px 10px 14px #183B56)
     &--text
       max-width: 405px
+      margin-right: 40px
   &__description
     font-style: normal
     font-weight: bold
     font-size: 21px
-    line-height: 27px
+    line-height: 23px
     color: #48555B
     margin-bottom: 30px
+    text-align: justify
   &__text
     font-style: normal
     font-weight: normal
     font-size: 15px
     line-height: 23px
     color: #48555B
+    text-align: justify
   &__name
     color: #2291E6
     text-transform: uppercase
   &__image
     &-wrapper
       position: relative
-      width: 177px
+      max-width: 177px
       height: 224px
       margin-right: 30px
   &__link

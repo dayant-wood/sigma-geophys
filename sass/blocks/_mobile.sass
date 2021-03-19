@@ -1,0 +1,35 @@
+.mobile
+  padding: 36px 24px
+  position: fixed
+  z-index: 200
+  top: 0px
+  right: 0
+  left: 0
+  visibility: hidden
+  width: 100%
+  background-color: #FFFFFF
+  box-shadow: 10px 16px 48px rgba(0, 0, 0, 0.16)
+  overflow: hidden
+  &--visible
+    visibility: visible
+    overflow: auto
+  &__link
+    color: #183B56
+    text-align: center
+    font-style: normal
+    font-weight: 500
+    font-size: 16px
+    line-height: 22px
+    text-decoration: none
+    margin-bottom: 20px
+
+  &__nav
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+  &__image
+    position: absolute
+    width: 24px
+    right: 16px
+    top: 12px
