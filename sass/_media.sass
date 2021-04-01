@@ -3,12 +3,14 @@
   .hero-container,
   .about-container,
   .geography-container,
-  .footer-container
+  .footer-container,
+  .breadcrumb-container,
+  .main-info__container,
+  .contacts-container
     max-width: 92%
   .hero
     &__title
       font-size: 30px
-      // max-width: 800px
     &__link
       padding: 8px 18px
       font-size: 15px
@@ -18,7 +20,10 @@
   .hero-container,
   .about-container,
   .geography-container,
-  .footer-container
+  .footer-container,
+  .breadcrumb-container,
+  .main-info__container,
+  .contacts-container
     max-width: 90%
   .header
     &__logo
@@ -89,7 +94,7 @@
     cursor: pointer
     outline: none
     background-color: #fff
-    &--line
+    &__line
       background-color: $primary
       width: 16px
       height: 1px
@@ -107,7 +112,7 @@
     &__title
       font-size: 22px
     &__description
-      font-size: 16px
+      font-size: 15px
     &__text
       font-size: 12px
     &__image
@@ -130,12 +135,21 @@
   .footer
     &__text
       max-width: 260px
-
+  .main-info
+    &__container
+      flex-direction: column
+    &__right-side
+      margin-top: 20px
+      margin-left: 0
+      min-width: 100%
+    &__employe-text
+      font-size: 18px
 @media ( max-width: 576px )
   .hero
     &__title
       font-size: 18px
-      // max-width: 415px
+      margin-left: 25px
+      margin-right: 25px
     &__link
       padding: 4px 12px
       font-size: 10px
@@ -168,7 +182,10 @@
     &__text
       font-size: 12px
       max-width: 230px
-
+  .main-info
+    &__employe
+      &-wrapper
+        gap: 20px
 @media ( max-height: 487px )
   .mobile
     overflow: auto
@@ -186,6 +203,8 @@
       width: 80px
       height: 30px
   .hero
+    padding-top: 15px
+    padding-bottom: 15px
     &__swiper-button
       width: 10px
       height: 10px
@@ -208,3 +227,5 @@
     &__image
       &-wrapper
         margin-right: 15px
+  .main-info
+    padding-top: 0
