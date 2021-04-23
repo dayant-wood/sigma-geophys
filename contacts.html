@@ -69,63 +69,82 @@
 
     <section class="contacts">
       <div class="contacts-container">
-        <h1 class="contacts__title">Связаться с нами</h1>
-        <div class="contacts__adress">
-          <h2 class="contacts__title contacts__title--little">Наш адрес</h2>
-          <div class="contacts__adress-wrapper">
-            <p class="contacts__text">
-              Россия, г. Казань, 420073, ул. Аделя Кутуя, д.46, а/я 26
-            </p>
-            <a href="tel:+78432122054 " class="contacts__link"
-              >Тел/факс: +7 (843) 212 20 54</a
-            >
-            <a href="mailto:info@sigma-geophys.com " class="contacts__link"
-              >info@sigma-geophys.com</a
-            >
-          </div>
-        </div>
-
+        <!-- <h1 class="contacts__title">Связаться с нами</h1> -->
         <div class="contacts__content">
-          <form action="send.php" method="POST" class="form contacts__form">
-            <div class="contacts__input-group">
-              <input
-                type="text"
-                class="input contacts__input"
-                placeholder="Ваше имя*"
-                name="name"
-                required
-                minlength="3"
-              />
+          <div class="contacts__map-blocks">
+            <div class="contacts__blocks">
+              <div class="contacts__blocks-wrapper">
+                <h2 class="contacts__title contacts__title--little">
+                  Наш адрес
+                </h2>
+              </div>
+              <div class="contacts__blocks-wrapper">
+                <img class="contacts__icon" src="img/map-icon.svg" alt="icon" />
+                <a href="#" class="contacts__link"
+                  >Россия, г. Казань, 420073, ул. Аделя Кутуя, д.46, а/я 26</a
+                >
+              </div>
+              <div class="contacts__blocks-wrapper">
+                <img
+                  class="contacts__icon"
+                  src="img/contact-phone-call.svg"
+                  alt="phone"
+                />
+                <a href="tel:+78432122054" class="contacts__link"
+                  >Тел/факс: +7 (843) 212 20 54</a
+                >
+              </div>
+              <div class="contacts__blocks-wrapper">
+                <img class="contacts__icon" src="img/email.svg" alt="email" />
+                <a href="mailto:info@sigma-geophys.com " class="contacts__link"
+                  >info@sigma-geophys.com</a
+                >
+              </div>
             </div>
-            <div class="contacts__input-group">
-              <input
-                type="email"
-                class="input contacts__input email-input"
-                placeholder="Ваш email*"
-                name="email"
-                required
-              />
+            <div class="map">
+              <iframe
+                class="map__frame"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.4193146457646!2d49.17369961542421!3d55.785956496902664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead9b462bbe75%3A0x59dfb72c1e0a822b!2sUlitsa%20Adelya%20Kutuya%2C%2046%2C%20Kazan%2C%20Respublika%20Tatarstan%2C%20420073!5e0!3m2!1sen!2sru!4v1617271047637!5m2!1sen!2sru"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                height="400"
+              ></iframe>
             </div>
-            <textarea
-              class="message contacts__message"
-              placeholder="Message"
-              name="message"
-            ></textarea>
-            <div class="contacts__container">
-              <button class="button contacts__button">Отправить</button>
-              <span class="contacts__info">* Обязательные поля</span>
-            </div>
-          </form>
+          </div>
 
-          <div class="map">
-            <iframe
-              class="map__frame"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.4193146457646!2d49.17369961542421!3d55.785956496902664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead9b462bbe75%3A0x59dfb72c1e0a822b!2sUlitsa%20Adelya%20Kutuya%2C%2046%2C%20Kazan%2C%20Respublika%20Tatarstan%2C%20420073!5e0!3m2!1sen!2sru!4v1617271047637!5m2!1sen!2sru"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              height="300"
-            ></iframe>
+          <div class="contacts__form-group">
+            <h3 class="contacts__title">Отправьте нам сообщение</h3>
+            <form action="send.php" method="POST" class="form contacts__form">
+              <div class="contacts__input-group">
+                <input
+                  type="text"
+                  class="input contacts__input"
+                  placeholder="Ваше имя*"
+                  name="name"
+                  required
+                  minlength="3"
+                />
+              </div>
+              <div class="contacts__input-group">
+                <input
+                  type="email"
+                  class="input contacts__input email-input"
+                  placeholder="Ваш email*"
+                  name="email"
+                  required
+                />
+              </div>
+              <textarea
+                class="message contacts__message"
+                placeholder="Message"
+                name="message"
+              ></textarea>
+              <div class="contacts__container">
+                <button class="button contacts__button">Отправить</button>
+                <span class="contacts__info">* Обязательные поля</span>
+              </div>
+            </form>
           </div>
         </div>
       </div>

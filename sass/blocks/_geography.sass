@@ -7,7 +7,37 @@
   &__title
     font-style: normal
     font-weight: bold
-    font-size: 24px
+    font-size: 22px
     color: $primary
     // text-decoration: underline
+    border-bottom: 1px solid hsla(206, 56, 22 , .3 )
+    max-width: 350px
+    margin: auto
     margin-bottom: 20px
+  &-wrapper
+    position: relative
+  &__map-container
+    position: absolute
+    width: 3%
+    &--komi
+      top: 50%
+      left: 50%
+    &--sahalin
+      top: 20%
+      left: 80%
+  &__map-modal
+    position: absolute
+    left: 100%
+    bottom: 100%
+    background: #fff
+    width: 100px
+    padding: 2px
+    display: none
+    z-index: 10
+    margin-bottom: 10px
+    border: 1px solid #004a8d
+    &--open
+      display: block
+  &__modal
+    &-title
+      font-size: 14px
