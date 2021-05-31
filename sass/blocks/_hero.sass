@@ -1,18 +1,18 @@
 .hero
+  background: url('../img/')
+  background-image: url('../img/hero-bg-1.png')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: top
   &-container
-    // width: 100%
+    max-width: 1200px
     margin: auto
   &__wrapper
     height: 500px
-    background: url('../img/')
-    background-image: url('../img/hero-bg-1.png')
-    background-repeat: no-repeat
-    background-size: cover
-    background-position: top
+
     display: flex
     align-content: center
     flex-wrap: wrap
-    text-align: left
     padding: 40px
   &__title
     position: relative
@@ -26,8 +26,7 @@
     margin-bottom: 20px
     text-shadow: 1px 1px #000
     flex-basis: 100%
-    // margin-left: 10px
-    // margin-right: 50px
+    max-width: 1200px
   &__span
     display: block
     flex-basis: 100%
@@ -48,25 +47,6 @@
       bottom: 0
       left: 0
       background: rgba(151, 151, 151, 0.32)
-    &--first
-      background-image: url('../img/hero-bg-1.png')
-      background-size: cover
-      display: flex
-      flex-direction: column
-      justify-content: center
-    &--second
-      background-image: url('../img/hero-bg-2.jpg')
-      background-size: cover
-      background-position: center
-      display: flex
-      flex-direction: column
-      justify-content: center
-    &--third
-      background-image: url('../img/hero-bg-3.jpg')
-      background-size: cover
-      display: flex
-      flex-direction: column
-      justify-content: center
 
   &__link
     position: relative
