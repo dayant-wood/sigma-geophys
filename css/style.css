@@ -359,7 +359,6 @@ img {
 }
 
 .swiper-container {
-  width: 92%;
   height: 450px;
 }
 
@@ -446,15 +445,6 @@ img {
   display: none;
 }
 
-.navbar__dropdown {
-  min-width: 160px;
-  display: none;
-}
-
-.navbar__dropdown--show {
-  display: block;
-}
-
 .dropdown {
   display: none;
   width: 200px;
@@ -466,15 +456,6 @@ img {
   color: #183B56;
   margin-bottom: 10px;
   border-bottom: 1px solid rgba(25, 60, 88, 0.3);
-}
-
-.show {
-  display: flex;
-  padding: 14px 20px;
-  flex-direction: column;
-  position: absolute;
-  background-color: #fff;
-  z-index: 99;
 }
 
 .hero {
@@ -890,9 +871,6 @@ img {
 .company-container {
   max-width: 1170px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  width: 100%;
 }
 
 .company__title {
@@ -943,17 +921,48 @@ img {
   text-align: center;
 }
 
-.method {
+.company__description {
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: #fff;
+}
+
+.company__list {
+  letter-spacing: 1.3px;
+  margin-bottom: 20px;
+}
+
+.company__item {
+  margin-top: 15px;
+  color: #183B56;
+  font-weight: lighter;
+}
+
+.company__info {
+  padding: 20px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 180px;
+  background-color: #fff;
+}
+
+.company__images-wrapper {
+  margin-top: 40px;
+}
+
+.method-msi {
   padding-top: 10px;
   padding-bottom: 30px;
 }
 
-.method__container {
+.method-msi__container {
   max-width: 1170px;
   margin: auto;
 }
 
-.method__title {
+.method-msi__title {
   font-style: normal;
   font-weight: bold;
   font-size: 23px;
@@ -964,85 +973,89 @@ img {
   border-color: rgba(25, 60, 88, 0.2);
 }
 
-.method__text {
+.method-msi__text {
+  margin-top: 20px;
+  background-color: #fff;
   font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
+  font-weight: lighter;
+  font-size: 15px;
   color: #48555B;
-  margin-left: 215px;
   padding: 20px;
+  letter-spacing: 1.5px;
 }
 
-#tabs {
-  margin: 10px 0;
-  overflow: hidden;
+.method-msi__image-wrapper {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
 }
 
-.tabs-nav {
-  width: 215px;
-  float: left;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.tabs-nav:after {
-  content: '';
-  display: inline-block;
-  width: 1px;
-  height: 1px;
-  background: #ccc;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.tabs-nav__li {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-.tabs-nav__a {
-  display: block;
-  padding: 10px 20px;
-  width: 100%;
-  box-sizing: border-box;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  background: #fbfbfb;
-  font-size: 16px;
+.method-msi__link {
   text-decoration: none;
-  color: #999;
+  color: blue;
 }
 
-.tabs-nav li:first-child a {
-  border-radius: 5px 0 0 0;
+.method-msi__list {
+  margin-top: 20px;
+  padding: 28px;
+  padding-top: 25px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #183B56;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  padding-left: 30px;
 }
 
-.tabs-nav li:last-child a {
-  border-bottom: 1px solid #ccc;
-  border-radius: 0 0 0 5px;
+.method-msi__list-title {
+  margin-bottom: 15px;
+  color: #183B56;
+  letter-spacing: 2px;
 }
 
-.tabs-nav a.active {
-  background: #fff;
-  color: #fff;
-  background-color: #183B56;
+.method-msi__comment {
+  margin-top: 7px;
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  color: #495057;
+  text-align: center;
 }
 
-.tabs-nav .tabs-items {
-  margin-left: 149px;
-  background: #fff;
+.method-msi__results {
+  padding: 28px;
+  margin-top: 20px;
+  background-color: #fff;
 }
 
-.tabs-item {
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 0 5px 5px 0;
-  min-height: 145px;
+.method-msi__slide {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+}
+
+.method-msi__images {
+  flex-basis: 50%;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.method-msi__text-wrapper {
+  flex-basis: 55%;
+  margin-right: 15px;
+}
+
+.method-msi__text-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.method-msi__description {
+  color: #183B56;
+  font-weight: lighter;
 }
 
 .contacts {
@@ -1273,6 +1286,7 @@ img {
 .methods__text {
   line-height: 2.7;
   margin-bottom: 20px;
+  letter-spacing: -0.5px;
 }
 
 .methods__text-wrapper {
