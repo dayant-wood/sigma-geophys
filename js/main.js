@@ -86,8 +86,8 @@ $(document).ready(function () {
     dropdown.classList.remove("show");
     overlay.classList.toggle("hidden-1");
     document.querySelector("body").classList.toggle("hidden");
-    // geographyTitle.classList.toggle('geography__map-modal--open');
-    // linkItem.next().toggle().toggleClass('geography__map-modal--open');
+    geographyTitle.classList.toggle('geography__map-modal--open');
+    linkItem.next().toggle().toggleClass('geography__map-modal--open');
   });
 
   linkItem.on("click", function (event) {
