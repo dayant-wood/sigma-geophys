@@ -27,14 +27,22 @@
     font-size: 15px
     color: #48555B
     letter-spacing: 1.5px
-    border-left: 2px solid $primary
+    border-left: 2px solid
+    border-color: hsla(206, 56, 22, .5)
     padding-left: 10px
-  &__images-wrapper
+  &__main-wrapper
     margin: auto
     margin-top: 20px
     max-width: 85%
-
   &__image
     object-fit: cover
   &__info
     background-color: #fff
+  &__images-wrapper
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: 20px
+  &__image-wrapper
+    width: 300px
+    height: 150px
