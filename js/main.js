@@ -45,63 +45,11 @@ $(document).ready(function () {
   //     }
   // });
 
-  // const linkItem = $(".geography__map-link");
-  // const dropdown = document.querySelector(".dropdown");
-  // const linkClick = document.querySelector(".navbar__item--click");
-  // const overlay = document.querySelector(".overlay");
-  // const geographyTitle = document.querySelector(".geography__modal-title");
-  // const geographyContainer = document.querySelector(
-  //   ".geography__map-container"
-  // );
-  // const geographyModal = document.querySelector(".geography__map-modal");
-
-  // geographyContainer.addEventListener("mouseenter", function () {
-  //   // geographyModal.classList.add("geography__map-modal--open");
-  //   linkItem.next().toggle().toggleClass("geography__map-modal--open");
-  // });
-
-  // geographyContainer.addEventListener("mouseleave", function () {
-  //   linkItem.classList.remove("geography__map-modal--open");
-  // });
-
-  // //open dropdown
-  // linkClick.addEventListener("click", function (event) {
-  //   event.preventDefault();
-  //   dropdown.classList.toggle("show");
-  //   document.querySelector("body").classList.toggle("hidden");
-  //   overlay.classList.remove("hidden-1");
-  // });
-
-  // //close dropdown
-  // overlay.addEventListener("click", function () {
-  //   dropdown.classList.remove("show");
-  //   overlay.classList.toggle("hidden-1");
-  //   document.querySelector("body").classList.toggle("hidden");
-  //   geographyTitle.classList.toggle("geography__map-modal--open");
-  //   linkItem.next().toggle().toggleClass("geography__map-modal--open");
-  // });
-
-  // linkItem.on("click", function (event) {
-  //   event.preventDefault();
-  //   $(this).next().toggle().toggleClass("geography__map-modal--open");
-  //   // overlay.classList.remove("hidden-1");
-  // });
-
-  // const time = 1000;
-  // const step = 1;
-
-  // function outNum(num, elem) {
-  //     let e = document.querySelector("#out");
-  //     n = 0;
-  //     let t = Math.round(time / (num / step));
-  //     let interval = setInterval(() => {
-  //         n = n + step;
-  //         if (n == num) {
-  //             clearInterval(interval);
-  //         }
-  //         e.innerHTML = n;
-  //     }, t);
-  // }
-
-  // outNum(1, "#out");
+  //preventDefault for geography
+  const linkItem = document.querySelectorAll(".geography__map-link");
+  for (const links of linkItem) {
+    links.addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  }
 });

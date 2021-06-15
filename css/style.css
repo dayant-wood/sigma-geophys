@@ -695,8 +695,8 @@ img {
   left: 100%;
   bottom: 100%;
   background: #fff;
-  width: 100px;
-  padding: 2px;
+  max-width: 150px;
+  padding: 5px;
   display: none;
   z-index: 10;
   margin-bottom: 10px;
