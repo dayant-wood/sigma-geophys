@@ -45,56 +45,47 @@ $(document).ready(function () {
   //     }
   // });
 
-  //TABS
-  $(function () {
-    var tab = $("#tabs .tabs-items > div");
-    tab.hide().filter(":first").show();
+  // const linkItem = $(".geography__map-link");
+  // const dropdown = document.querySelector(".dropdown");
+  // const linkClick = document.querySelector(".navbar__item--click");
+  // const overlay = document.querySelector(".overlay");
+  // const geographyTitle = document.querySelector(".geography__modal-title");
+  // const geographyContainer = document.querySelector(
+  //   ".geography__map-container"
+  // );
+  // const geographyModal = document.querySelector(".geography__map-modal");
 
-    // Клики по вкладкам.
-    $("#tabs .tabs-nav a")
-      .click(function () {
-        tab.hide();
-        tab.filter(this.hash).show();
-        $("#tabs .tabs-nav a").removeClass("active");
-        $(this).addClass("active");
-        return false;
-      })
-      .filter(":first")
-      .click();
+  // geographyContainer.addEventListener("mouseenter", function () {
+  //   // geographyModal.classList.add("geography__map-modal--open");
+  //   linkItem.next().toggle().toggleClass("geography__map-modal--open");
+  // });
 
-    // Клики по якорным ссылкам.
-    $(".tabs-target").click(function () {
-      $("#tabs .tabs-nav a[href=" + $(this).data("id") + "]").click();
-    });
-  });
+  // geographyContainer.addEventListener("mouseleave", function () {
+  //   linkItem.classList.remove("geography__map-modal--open");
+  // });
 
-  const linkItem = $(".geography__map-link");
-  const dropdown = document.querySelector(".dropdown");
-  const linkClick = document.querySelector(".navbar__item--click");
-  const overlay = document.querySelector(".overlay");
-  const geographyTitle = document.querySelector(".geography__modal-title");
+  // //open dropdown
+  // linkClick.addEventListener("click", function (event) {
+  //   event.preventDefault();
+  //   dropdown.classList.toggle("show");
+  //   document.querySelector("body").classList.toggle("hidden");
+  //   overlay.classList.remove("hidden-1");
+  // });
 
-  linkClick.addEventListener("click", function (event) {
-    event.preventDefault();
-    // dropdown.classList.toggle('show');
-    // document.querySelector('body').classList.toggle('hidden');
-    // overlay.classList.remove('hidden-1');
-  });
+  // //close dropdown
+  // overlay.addEventListener("click", function () {
+  //   dropdown.classList.remove("show");
+  //   overlay.classList.toggle("hidden-1");
+  //   document.querySelector("body").classList.toggle("hidden");
+  //   geographyTitle.classList.toggle("geography__map-modal--open");
+  //   linkItem.next().toggle().toggleClass("geography__map-modal--open");
+  // });
 
-  //close dropdown
-  overlay.addEventListener("click", function () {
-    dropdown.classList.remove("show");
-    overlay.classList.toggle("hidden-1");
-    document.querySelector("body").classList.toggle("hidden");
-    geographyTitle.classList.toggle('geography__map-modal--open');
-    linkItem.next().toggle().toggleClass('geography__map-modal--open');
-  });
-
-  linkItem.on("click", function (event) {
-    event.preventDefault();
-    $(this).next().toggle().toggleClass("geography__map-modal--open");
-    // overlay.classList.remove('hidden-1');
-  });
+  // linkItem.on("click", function (event) {
+  //   event.preventDefault();
+  //   $(this).next().toggle().toggleClass("geography__map-modal--open");
+  //   // overlay.classList.remove("hidden-1");
+  // });
 
   // const time = 1000;
   // const step = 1;
