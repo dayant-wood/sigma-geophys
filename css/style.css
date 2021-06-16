@@ -374,6 +374,7 @@ img {
   a {
     outline: none;
     cursor: pointer;
+    transition: 0.4s;
   }
   a:hover {
     color: #2291E5;
@@ -383,8 +384,7 @@ img {
   }
   button:hover, button:focus {
     outline: none;
-    box-shadow: 0 0 12px white;
-    color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
@@ -440,6 +440,10 @@ img {
   text-decoration: none;
   color: #183B56;
   font-size: 14px;
+}
+
+.navbar__link:hover {
+  box-shadow: none;
 }
 
 .navbar__item:hover .dropdown {
@@ -590,7 +594,6 @@ img {
 
 .about__text {
   font-style: normal;
-  font-weight: lighter;
   font-size: 15px;
   color: #48555B;
   letter-spacing: 1.5px;
@@ -608,7 +611,6 @@ img {
 }
 
 .about__button:hover {
-  color: #fff;
   text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
 }
 
@@ -630,7 +632,7 @@ img {
   padding: 5px;
   font-style: normal;
   font-weight: bold;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 36px;
   color: #183B56;
   background: rgba(255, 255, 255, 0.76);
@@ -677,17 +679,42 @@ img {
 
 .geography__map-container {
   position: absolute;
-  width: 3%;
+  width: 2.2%;
 }
 
-.geography__map-container--komi {
+.geography__map-container--yamburg {
   top: 50%;
-  left: 50%;
+  left: 43%;
+}
+
+.geography__map-container--zapolarka {
+  top: 53%;
+  left: 46%;
 }
 
 .geography__map-container--sahalin {
-  top: 20%;
-  left: 80%;
+  top: 50%;
+  right: 30%;
+}
+
+.geography__map-container--tatarstan {
+  top: 67%;
+  left: 24%;
+}
+
+.geography__map-container--orenburg {
+  top: 75%;
+  left: 24%;
+}
+
+.geography__map-container--samara {
+  top: 70%;
+  left: 21%;
+}
+
+.geography__map-container--neneckiy {
+  top: 40%;
+  left: 31%;
 }
 
 .geography__map-modal {
@@ -695,12 +722,13 @@ img {
   left: 100%;
   bottom: 100%;
   background: #fff;
-  max-width: 150px;
+  min-width: 120px;
   padding: 5px;
   display: none;
   z-index: 10;
   margin-bottom: 10px;
   border: 1px solid #004a8d;
+  text-align: center;
 }
 
 .geography__map-modal--open {
@@ -708,11 +736,13 @@ img {
 }
 
 .geography__modal-title {
-  font-size: 14px;
+  font-size: 13px;
+  width: fit-content;
+  text-align: center;
 }
 
 .geography__map-container:hover {
-  width: 3.85%;
+  width: 3%;
   filter: sepia(51%);
   transition: 0.5s;
 }
@@ -1297,7 +1327,8 @@ img {
 .methods__text {
   line-height: 2.7;
   margin-bottom: 20px;
-  letter-spacing: -0.5px;
+  font-size: 14px;
+  font-style: italic;
 }
 
 .methods__text-wrapper {
@@ -1319,6 +1350,10 @@ img {
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+.methods__button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .technologies {
