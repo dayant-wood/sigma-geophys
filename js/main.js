@@ -10,13 +10,17 @@ $(document).ready(function () {
       prevEl: ".swiper-button-prev",
     },
 
+    pagination: {
+      el: ".swiper-pagination",
+    },
+
     keyboard: {
       enabled: true,
       onlyInViewport: false,
     },
 
     autoplay: {
-      delay: 5000,
+      delay: 4000,
       disableOnInteraction: true,
     },
   });

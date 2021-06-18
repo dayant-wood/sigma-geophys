@@ -1102,8 +1102,7 @@ img {
 
 .method-msi__images {
   flex-basis: 50%;
-  margin-right: 10px;
-  margin-left: 25px;
+  margin-right: 20px;
 }
 
 .method-msi__text-wrapper {
@@ -1117,6 +1116,116 @@ img {
 }
 
 .method-msi__description {
+  font-style: italic;
+  font-size: 14px;
+  max-width: 90%;
+}
+
+.method-msi__image {
+  object-fit: cover;
+  height: 360px;
+}
+
+.method-grp {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.method-grp__container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.method-grp__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 23px;
+  text-transform: uppercase;
+  color: #183B56;
+  text-align: center;
+  border-bottom: 1px solid;
+  border-color: rgba(25, 60, 88, 0.2);
+}
+
+.method-grp__text {
+  margin-top: 20px;
+  background-color: #fff;
+  font-style: normal;
+  font-size: 15px;
+  color: #48555B;
+  padding: 20px;
+  letter-spacing: 1.5px;
+}
+
+.method-grp__image-wrapper {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.method-grp__link {
+  text-decoration: none;
+  color: blue;
+}
+
+.method-grp__list {
+  margin-top: 20px;
+  padding: 28px;
+  padding-top: 25px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #183B56;
+  letter-spacing: 2px;
+  padding-left: 30px;
+}
+
+.method-grp__list-title {
+  margin-bottom: 15px;
+  color: #183B56;
+  letter-spacing: 2px;
+}
+
+.method-grp__comment {
+  margin-top: 7px;
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  color: #495057;
+  text-align: center;
+}
+
+.method-grp__results {
+  padding: 28px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+.method-grp__slide {
+  display: flex;
+  align-items: center;
+  width: 1100px;
+}
+
+.method-grp__images {
+  flex-basis: 50%;
+  margin-right: 10px;
+  margin-left: 25px;
+}
+
+.method-grp__text-wrapper {
+  flex-basis: 55%;
+  margin-right: 15px;
+}
+
+.method-grp__text-title {
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.method-grp__description {
   font-style: italic;
   font-size: 14px;
   max-width: 90%;
@@ -1335,8 +1444,13 @@ img {
 }
 
 .methods__image-wrapper {
+  max-height: 500px;
   max-width: 350px;
   position: relative;
+}
+
+.methods__image {
+  object-fit: cover;
 }
 
 .methods__text {
@@ -1406,7 +1520,7 @@ img {
   margin-top: 20px;
   background-color: #fff;
   font-style: normal;
-  font-size: 15px;
+  font-size: 14px;
   color: #48555B;
   letter-spacing: 1.5px;
   border-left: 2px solid;
@@ -1414,8 +1528,10 @@ img {
   padding: 10px;
 }
 
-.technologies__text--main {
+.technologies__text--center {
   text-align: center;
+  border: none;
+  font-size: 17px;
 }
 
 .technologies__main-wrapper {
