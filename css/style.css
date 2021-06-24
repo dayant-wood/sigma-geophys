@@ -359,7 +359,7 @@ img {
 }
 
 .swiper-container {
-  height: 450px;
+  height: 550px;
 }
 
 .hidden {
@@ -1059,22 +1059,25 @@ img {
 
 .method-msi__link {
   text-decoration: none;
-  color: blue;
+  color: #183B56;
+  font-weight: bolder;
 }
 
 .method-msi__list {
   margin-top: 20px;
-  padding: 28px;
-  padding-top: 25px;
+  padding: 20px;
   text-decoration: none;
   background-color: #fff;
   color: #183B56;
   letter-spacing: 2px;
-  padding-left: 30px;
+  padding-left: 36px;
+  font-size: 15px;
 }
 
 .method-msi__list-title {
+  font-size: 16px;
   margin-bottom: 15px;
+  font-weight: bolder;
   color: #183B56;
   letter-spacing: 2px;
 }
@@ -1089,7 +1092,8 @@ img {
 }
 
 .method-msi__results {
-  padding: 28px;
+  padding-left: 36px;
+  padding-top: 20px;
   margin-top: 20px;
   background-color: #fff;
 }
@@ -1157,12 +1161,17 @@ img {
   letter-spacing: 1.5px;
 }
 
+.method-grp__image {
+  object-fit: cover;
+}
+
 .method-grp__image-wrapper {
   max-width: 40%;
   margin: auto;
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
   grid-gap: 30px;
 }
 
@@ -1173,19 +1182,25 @@ img {
 
 .method-grp__list {
   margin-top: 20px;
-  padding: 28px;
-  padding-top: 25px;
+  padding: 20px;
   text-decoration: none;
   background-color: #fff;
   color: #183B56;
   letter-spacing: 2px;
-  padding-left: 30px;
+  padding-left: 36px;
+  font-size: 15px;
 }
 
 .method-grp__list-title {
+  font-size: 16px;
   margin-bottom: 15px;
+  font-weight: bolder;
   color: #183B56;
   letter-spacing: 2px;
+}
+
+.method-grp__item {
+  margin-bottom: 10px;
 }
 
 .method-grp__comment {
@@ -1198,7 +1213,8 @@ img {
 }
 
 .method-grp__results {
-  padding: 28px;
+  padding-left: 36px;
+  padding-top: 20px;
   margin-top: 20px;
   background-color: #fff;
 }
