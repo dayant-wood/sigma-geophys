@@ -1578,6 +1578,28 @@ img {
   width: 25%;
 }
 
+.thankyou {
+  padding-bottom: 50px;
+  max-width: 1170px;
+  margin: auto;
+}
+
+.thankyou__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  color: #183B56;
+  margin-bottom: 20px;
+}
+
+.thankyou__link {
+  padding: 10px;
+  color: #fff;
+  background-color: #183B56;
+  text-decoration: none;
+  font-size: 12px;
+}
+
 @media (max-width: 1200px) {
   .header-container,
   .hero-container,
@@ -1623,9 +1645,6 @@ img {
   .hero__container {
     height: 500px;
   }
-  .about__wrapper {
-    flex-direction: column;
-  }
   .about__wrapper--text {
     display: flex;
     max-width: 100%;
@@ -1636,9 +1655,15 @@ img {
     justify-content: center;
     margin-top: 50px;
   }
-  .about__description {
-    margin-right: 40px;
-    font-size: 18px;
+  .about__image {
+    flex-basis: 55%;
+  }
+  .about__text {
+    font-size: 13px;
+  }
+  .about__button {
+    font-size: 12px;
+    padding: 10px;
   }
   .footer__nav {
     grid-template-columns: repeat(2, 50%);
@@ -1728,6 +1753,9 @@ img {
   }
   .about__link {
     font-size: 12px;
+  }
+  .about__wrapper {
+    align-items: center;
   }
   .subscribe__title {
     font-size: 20px;
