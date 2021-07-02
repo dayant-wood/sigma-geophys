@@ -996,11 +996,14 @@ img {
 .company__list {
   letter-spacing: 1.3px;
   margin-bottom: 20px;
+  border-left: 2px solid;
+  border-color: rgba(25, 60, 88, 0.5);
 }
 
 .company__item {
   margin-top: 15px;
   color: #183B56;
+  font-size: 14px;
 }
 
 .company__info {
@@ -1189,6 +1192,8 @@ img {
   letter-spacing: 2px;
   padding-left: 36px;
   font-size: 15px;
+  border-left: 2px solid;
+  border-color: rgba(25, 60, 88, 0.5);
 }
 
 .method-grp__list-title {
@@ -1575,7 +1580,6 @@ img {
 .technologies__image-wrapper {
   margin-top: 20px;
   margin-bottom: 30px;
-  width: 25%;
 }
 
 .thankyou {
