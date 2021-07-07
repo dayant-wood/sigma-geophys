@@ -19,10 +19,10 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
 
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: true,
-    },
+    // autoplay: {
+    //   delay: 4000,
+    //   disableOnInteraction: true,
+    // },
   });
 
   //open mobile-menu
@@ -51,9 +51,10 @@ $(document).ready(function () {
 
   //preventDefault for geography
   const linkItem = document.querySelectorAll(".geography__map-link");
-  for (const links of linkItem) {
+
+  linkItem.forEach(function (links) {
     links.addEventListener("click", function (e) {
       e.preventDefault();
     });
-  }
+  });
 });

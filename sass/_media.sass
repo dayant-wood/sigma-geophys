@@ -23,15 +23,19 @@
   .footer-container,
   .breadcrumb-container,
   .main-info__container,
-  .contacts-container
+  .contacts-container,
+  .company-container
+  .methods-container
     max-width: 90%
   .header
     &__logo
       width: 125px
       height: 58px
+
   .navbar
     &__list
       font-size: 14px
+
   .hero
     &__title
       // max-width: 700px
@@ -41,26 +45,48 @@
       font-size: 15px
     &__container
       height: 500px
+
   .about
+    &__title
+      font-size: 20px
     &__wrapper
-      // flex-direction: column
+      align-items: center
       &--text
         display: flex
         max-width: 100%
         margin-right: 0
+
       &--images
         width: 100%
         justify-content: center
         margin-top: 50px
     &__image
       flex-basis: 55%
-
-    &__description
     &__text
       font-size: 13px
     &__button
       font-size: 12px
       padding: 10px
+
+  .methods
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 13px
+      max-width: 500px
+    &__wrapper
+      flex-basis: 50%
+    &-slide
+      gap: 20px
+    &__image-wrapper
+      max-width: 300px
+    &__button
+      padding: 7px
+
+  .geography
+    &__title
+      font-size: 20px
+
   .footer
     &__nav
       grid-template-columns: repeat(2, 50%)
@@ -77,6 +103,7 @@
       font-size: 12px
   .map
     height: 350px
+
 @media (max-width: 767px)
   body
     padding-top: 80px
@@ -120,16 +147,20 @@
       padding: 6px 16px
       font-size: 13px
       max-width: 130px
+    &__span
+
   .about
-    padding-top: 50px
-    padding-bottom: 50px
+    padding-top: 30px
+    padding-bottom: 20px
     &__title
       font-size: 20px
     &__description
       font-size: 15px
+      flex-basis: 50%
     &__text
       font-size: 12px
     &__image
+      flex-basis: 50%
       &-wrapper
         max-width: 140px
         height: 200px
@@ -137,12 +168,25 @@
       font-size: 12px
     &__wrapper
       align-items: center
+
   .subscribe
     &__title
-      font-size: 20px
+      font-size: 16px
     &__link
       padding: 9px 2px
       font-size: 10px
+  .methods
+    &-slide
+      flex-direction: column
+    &__title
+      margin-bottom: 30px
+    &__text-title
+      font-size: 14px
+    &__text
+      font-size: 12px
+      line-height: 2
+    &__button
+      font-size: 12px
   .geography
     &__title
       font-size: 20px
@@ -150,6 +194,7 @@
   .footer
     &__text
       max-width: 260px
+
   .main-info
     &__container
       flex-direction: column
@@ -159,6 +204,7 @@
       min-width: 100%
     &__employe-text
       font-size: 18px
+
   .contacts
     &__title
       font-size: 22px
@@ -174,35 +220,46 @@
     &__address
       &-wrapper
         justify-content: space-evenly
+
   .map
     width: 100%
+
+  .swiper-container
+    min-height: 650px
+
 @media ( max-width: 576px )
   .hero
     &__title
       font-size: 18px
-      margin-left: 25px
-      margin-right: 25px
     &__link
       padding: 4px 12px
       font-size: 10px
-
     &__container
       height: 350px
     &__image
       height: 500px
+    &__span
+      color: #fff
+      font-size: 12px
   .about
     &__title
       font-size: 18px
-      margin-bottom: 30px
+
     &__description
       font-size: 12px
-    &__text
+    &__button
+    &__wrapper
+      flex-direction: column
+      margin-bottom: 20px
+    &__image
+      max-width: 400px
+    &__button
       font-size: 10px
-    &__link
-      font-size: 16px
-    &__image-wrapper
-      max-width: 120px
-      height: 180px
+  .subscribe
+  .methods
+    padding: 30px 0 0 0
+    &__button
+      padding: 8px
   .geography
     &__title
       font-size: 18px

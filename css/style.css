@@ -381,6 +381,7 @@ img {
   }
   button {
     transition: 0.4s;
+    white-space: nowrap;
   }
   button:hover, button:focus {
     outline: none;
@@ -597,6 +598,7 @@ img {
   font-size: 15px;
   color: #48555B;
   letter-spacing: 1.5px;
+  max-width: 450px;
 }
 
 .about__button {
@@ -637,16 +639,15 @@ img {
 }
 
 .subscribe__title {
-  padding: 5px;
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
-  line-height: 36px;
   color: #183B56;
   background: rgba(255, 255, 255, 0.76);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
   filter: drop-shadow(15px 10px 14px #183B56);
+  max-width: 300px;
 }
 
 .subscribe__link {
@@ -849,7 +850,10 @@ img {
   margin-top: 10px;
   font-family: 'Open Sans', sans-serif;
   margin-right: 20px;
+  margin-top: 0px;
   display: flex;
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer__item-wrapper {
@@ -1622,14 +1626,7 @@ img {
 }
 
 @media (max-width: 992px) {
-  .header-container,
-  .hero-container,
-  .about-container,
-  .geography-container,
-  .footer-container,
-  .breadcrumb-container,
-  .main-info__container,
-  .contacts-container {
+  .methods-container {
     max-width: 90%;
   }
   .header__logo {
@@ -1648,6 +1645,12 @@ img {
   }
   .hero__container {
     height: 500px;
+  }
+  .about__title {
+    font-size: 20px;
+  }
+  .about__wrapper {
+    align-items: center;
   }
   .about__wrapper--text {
     display: flex;
@@ -1668,6 +1671,28 @@ img {
   .about__button {
     font-size: 12px;
     padding: 10px;
+  }
+  .methods__title {
+    font-size: 20px;
+  }
+  .methods__text {
+    font-size: 13px;
+    max-width: 500px;
+  }
+  .methods__wrapper {
+    flex-basis: 50%;
+  }
+  .methods-slide {
+    gap: 20px;
+  }
+  .methods__image-wrapper {
+    max-width: 300px;
+  }
+  .methods__button {
+    padding: 7px;
+  }
+  .geography__title {
+    font-size: 20px;
   }
   .footer__nav {
     grid-template-columns: repeat(2, 50%);
@@ -1739,17 +1764,21 @@ img {
     max-width: 130px;
   }
   .about {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
   .about__title {
     font-size: 20px;
   }
   .about__description {
     font-size: 15px;
+    flex-basis: 50%;
   }
   .about__text {
     font-size: 12px;
+  }
+  .about__image {
+    flex-basis: 50%;
   }
   .about__image-wrapper {
     max-width: 140px;
@@ -1762,11 +1791,27 @@ img {
     align-items: center;
   }
   .subscribe__title {
-    font-size: 20px;
+    font-size: 16px;
   }
   .subscribe__link {
     padding: 9px 2px;
     font-size: 10px;
+  }
+  .methods-slide {
+    flex-direction: column;
+  }
+  .methods__title {
+    margin-bottom: 30px;
+  }
+  .methods__text-title {
+    font-size: 14px;
+  }
+  .methods__text {
+    font-size: 12px;
+    line-height: 2;
+  }
+  .methods__button {
+    font-size: 12px;
   }
   .geography__title {
     font-size: 20px;
@@ -1806,13 +1851,14 @@ img {
   .map {
     width: 100%;
   }
+  .swiper-container {
+    min-height: 650px;
+  }
 }
 
 @media (max-width: 576px) {
   .hero__title {
     font-size: 18px;
-    margin-left: 25px;
-    margin-right: 25px;
   }
   .hero__link {
     padding: 4px 12px;
@@ -1824,22 +1870,31 @@ img {
   .hero__image {
     height: 500px;
   }
+  .hero__span {
+    color: #fff;
+    font-size: 12px;
+  }
   .about__title {
     font-size: 18px;
-    margin-bottom: 30px;
   }
   .about__description {
     font-size: 12px;
   }
-  .about__text {
+  .about__wrapper {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .about__image {
+    max-width: 400px;
+  }
+  .about__button {
     font-size: 10px;
   }
-  .about__link {
-    font-size: 16px;
+  .methods {
+    padding: 30px 0 0 0;
   }
-  .about__image-wrapper {
-    max-width: 120px;
-    height: 180px;
+  .methods__button {
+    padding: 8px;
   }
   .geography__title {
     font-size: 18px;
