@@ -734,10 +734,9 @@ img {
 
 .geography__map-modal {
   position: absolute;
-  left: 100%;
+  right: 100%;
   bottom: 100%;
   background: #fff;
-  min-width: 220px;
   padding: 5px;
   z-index: 10;
   margin-bottom: 10px;
@@ -1898,6 +1897,9 @@ img {
   }
   .geography__title {
     font-size: 18px;
+  }
+  .geography__modal-title, .geography__text {
+    font-size: 8px;
   }
   .footer__menu-title {
     font-size: 14px;
