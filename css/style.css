@@ -491,7 +491,6 @@ img {
   display: flex;
   align-content: center;
   flex-wrap: wrap;
-  padding: 40px;
 }
 
 .hero__title {
@@ -762,8 +761,6 @@ img {
 
 .geography__map-link:hover {
   filter: grayscale(0.2) saturate(2);
-  transition: 0.5s;
-  border: 1px solid white;
 }
 
 .geography__map-container:hover .geography__map-modal {
@@ -900,6 +897,10 @@ img {
   margin-bottom: 20px;
 }
 
+.mobile__link:last-child {
+  margin-bottom: 0;
+}
+
 .mobile__nav {
   display: flex;
   flex-direction: column;
@@ -942,7 +943,7 @@ img {
 
 .company {
   padding-top: 20px;
-  padding-bottom: 170px;
+  padding-bottom: 70px;
 }
 
 .company-container {
@@ -968,6 +969,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 20px;
+  min-height: 500px;
 }
 
 .company__text {
@@ -1018,7 +1020,6 @@ img {
 }
 
 .company__images-wrapper {
-  max-width: 60%;
   margin: auto;
   margin-top: 40px;
 }
@@ -1299,7 +1300,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  height: 250px;
+  height: 290px;
   border: 1px solid rgba(25, 60, 88, 0.2);
   border-radius: 4px;
   background-color: #fff;
@@ -1338,7 +1339,6 @@ img {
   margin-top: 30px;
   gap: 19px;
   background-color: #fff;
-  margin-right: 20px;
   border-radius: 4px;
 }
 
@@ -1351,7 +1351,7 @@ img {
 
 .contacts__input-group {
   margin-bottom: 5px;
-  flex-basis: 48%;
+  flex-basis: 47%;
 }
 
 .contacts__input-group:hover {
@@ -1368,7 +1368,6 @@ img {
 
 .contacts__form-group {
   flex-basis: 50%;
-  height: 450px;
 }
 
 .contacts__message {
@@ -1429,7 +1428,7 @@ img {
   height: 250px;
   border-radius: 4px;
   overflow: hidden;
-  margin-top: 30px;
+  margin-top: 40px;
   border: 1px solid rgba(25, 60, 88, 0.3);
 }
 
@@ -1471,6 +1470,7 @@ img {
   max-height: 500px;
   max-width: 350px;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .methods__image {
@@ -1504,6 +1504,7 @@ img {
   text-decoration: none;
   cursor: pointer;
   border-radius: 4px;
+  -webkit-appearance: none !important;
 }
 
 .methods__button:hover {
@@ -1511,6 +1512,7 @@ img {
 }
 
 .technologies {
+  padding-top: 20px;
   padding-bottom: 50px;
 }
 
@@ -1575,14 +1577,15 @@ img {
 
 .technologies__images-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
 }
 
 .technologies__image-wrapper {
   margin-top: 20px;
   margin-bottom: 30px;
+  flex-basis: 27%;
 }
 
 .thankyou {
@@ -1615,7 +1618,9 @@ img {
   .footer-container,
   .breadcrumb-container,
   .main-info__container,
-  .contacts-container {
+  .company-container,
+  .contacts-container,
+  .technologies-container {
     max-width: 92%;
   }
   .hero__link {
@@ -1625,7 +1630,18 @@ img {
 }
 
 @media (max-width: 992px) {
-  .methods-container {
+  .header-container,
+  .hero-container,
+  .about-container,
+  .geography-container,
+  .footer-container,
+  .breadcrumb-container,
+  .main-info__container,
+  .contacts-container,
+  .about-container,
+  .company-container,
+  .methods-container,
+  .technologies-container {
     max-width: 90%;
   }
   .header__logo {
@@ -1681,9 +1697,6 @@ img {
   .methods__wrapper {
     flex-basis: 50%;
   }
-  .methods-slide {
-    gap: 20px;
-  }
   .methods__image-wrapper {
     max-width: 300px;
   }
@@ -1701,9 +1714,6 @@ img {
     font-size: 13px;
     width: 330px;
   }
-  .contacts__form {
-    max-width: 50%;
-  }
   .contacts__input-group {
     flex-basis: 100%;
   }
@@ -1711,7 +1721,7 @@ img {
     font-size: 12px;
   }
   .map {
-    height: 350px;
+    height: 300px;
   }
 }
 
@@ -1829,6 +1839,24 @@ img {
   .main-info__employe-text {
     font-size: 18px;
   }
+  .company__title {
+    font-size: 22px;
+  }
+  .company__text {
+    font-size: 14px;
+  }
+  .company__text-wrapper {
+    padding: 10px;
+  }
+  .technologies__title {
+    font-size: 22px;
+  }
+  .technologies__text {
+    font-size: 13px;
+  }
+  .technologies__text--center {
+    font-size: 15px;
+  }
   .contacts__title {
     font-size: 22px;
   }
@@ -1836,13 +1864,17 @@ img {
     font-size: 18px;
   }
   .contacts__content {
-    flex-wrap: wrap;
-    padding-left: 20px;
-    padding-right: 20px;
+    flex-wrap: wrap-reverse;
   }
   .contacts__form {
     max-width: 100%;
     margin-right: 0;
+  }
+  .contacts__form-group {
+    flex-basis: 100%;
+  }
+  .contacts__map-blocks {
+    flex-basis: 100%;
   }
   .contacts__address-wrapper {
     justify-content: space-evenly;
@@ -1872,6 +1904,7 @@ img {
   .hero__span {
     color: #fff;
     font-size: 12px;
+    text-shadow: 1px 1px black;
   }
   .about__title {
     font-size: 18px;
@@ -1893,13 +1926,50 @@ img {
     padding: 30px 0 0 0;
   }
   .methods__button {
-    padding: 8px;
+    padding: 10px;
+    font-size: 10px;
   }
   .geography__title {
     font-size: 18px;
   }
   .geography__modal-title, .geography__text {
     font-size: 8px;
+  }
+  .geography__map-container {
+    position: absolute;
+    width: 2.2%;
+  }
+  .geography__map-container--yamburg {
+    top: 48%;
+    left: 43%;
+  }
+  .geography__map-container--zapolarka {
+    top: 50%;
+    left: 46%;
+  }
+  .geography__map-container--sahalin {
+    top: 60%;
+    right: 7%;
+  }
+  .geography__map-container--tatarstan {
+    top: 63%;
+    left: 24%;
+  }
+  .geography__map-container--orenburg {
+    top: 73%;
+    left: 24%;
+  }
+  .geography__map-container--samara {
+    top: 66%;
+    left: 21%;
+  }
+  .geography__map-container--neneckiy {
+    top: 37%;
+    left: 31%;
+  }
+  .geography__map-container--komi {
+    top: 45%;
+    left: 31%;
   }
   .footer__menu-title {
     font-size: 14px;
@@ -1911,11 +1981,29 @@ img {
     font-size: 12px;
     max-width: 230px;
   }
-  .main-info__employe-wrapper {
-    gap: 20px;
-  }
   .contacts {
     padding-top: 10px;
+  }
+  .contacts__icon {
+    width: 20px;
+  }
+  .mobile {
+    padding: 20px;
+  }
+  .mobile__link {
+    font-size: 14px;
+  }
+  .swiper-container {
+    min-height: 700px;
+  }
+  .company__title {
+    font-size: 20px;
+  }
+  .company__text, .company__item {
+    font-size: 13px;
+  }
+  .company__wrapper {
+    gap: 10px;
   }
 }
 
@@ -1988,6 +2076,48 @@ img {
   .about__image-wrapper {
     margin-right: 15px;
   }
+  .methods__button {
+    padding: 8px;
+  }
+  .geography {
+    padding-top: 40px;
+  }
+  .geography__map-container {
+    position: absolute;
+    width: 2.5%;
+  }
+  .geography__map-container--yamburg {
+    top: 46%;
+    left: 43%;
+  }
+  .geography__map-container--zapolarka {
+    top: 45%;
+    left: 45%;
+  }
+  .geography__map-container--sahalin {
+    top: 56%;
+    right: 7%;
+  }
+  .geography__map-container--tatarstan {
+    top: 60%;
+    left: 24%;
+  }
+  .geography__map-container--orenburg {
+    top: 69%;
+    left: 24%;
+  }
+  .geography__map-container--samara {
+    top: 63%;
+    left: 21%;
+  }
+  .geography__map-container--neneckiy {
+    top: 34%;
+    left: 31%;
+  }
+  .geography__map-container--komi {
+    top: 42%;
+    left: 31%;
+  }
   .main-info {
     padding-top: 0;
   }
@@ -1997,8 +2127,20 @@ img {
   .contacts__button {
     margin-bottom: 10px;
   }
+  .contacts__text, .contacts__link {
+    font-size: 11px;
+  }
   .map {
     height: 250px;
+  }
+  .company__title {
+    font-size: 18px;
+  }
+  .company__text, .company__item {
+    font-size: 12px;
+  }
+  .company__info {
+    margin-top: 160px;
   }
 }
 /*# sourceMappingURL=style.css.map */

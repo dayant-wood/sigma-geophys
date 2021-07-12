@@ -33,13 +33,13 @@ $(document).ready(function () {
 
   function openMenu() {
     $(".mobile").toggleClass("mobile--visible");
-    $("body").toggleClass("hidden");
+    // $("body").toggleClass("hidden");
   }
 
   function closeMobileMenu(event) {
     event.preventDefault();
     $(".mobile").removeClass("mobile--visible");
-    $("body").toggleClass("hidden");
+    // $("body").toggleClass("hidden");
   }
   // $(document).on('keydown', function(e) {
   //     if (e.keyCode === 27) {
