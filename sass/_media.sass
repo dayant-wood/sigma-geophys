@@ -8,7 +8,10 @@
   .main-info__container,
   .company-container,
   .contacts-container,
-  .technologies-container
+  .technologies-container,
+  .method-grp__container,
+  .method-msi__containerб
+  .thankyou
     max-width: 92%
   .hero
     &__title
@@ -16,6 +19,13 @@
     &__link
       padding: 8px 18px
       font-size: 15px
+
+@media ( max-width: 1030px  )
+  .contacts
+    &__input-group
+      flex-basis: 100%
+      &:first-child
+        margin-right: 0
 
 @media (max-width: 992px)
   .header-container,
@@ -29,7 +39,9 @@
   .about-container,
   .company-container,
   .methods-container,
-  .technologies-container
+  .technologies-container,
+  .method-grp__container,
+  .method-msi__container
     max-width: 90%
   .header
     &__logo
@@ -58,7 +70,6 @@
         display: flex
         max-width: 100%
         margin-right: 0
-
       &--images
         width: 100%
         justify-content: center
@@ -66,7 +77,7 @@
     &__image
       flex-basis: 55%
     &__text
-      font-size: 13px
+      font-size: 14px
     &__button
       font-size: 12px
       padding: 10px
@@ -96,7 +107,6 @@
       font-size: 13px
       width: 330px
   .contacts
-
     &__input-group
       flex-basis: 100%
     &__text, &__link
@@ -104,11 +114,26 @@
   .map
     height: 300px
 
+  .technologies
+    &__image-field
+      object-fit: cover
+      height: 300px
+      width: 220px
+      margin-bottom: 20px
+    &__title
+      font-size: 20px
+      &--little
+        font-size: 14px
+    &__text
+      font-size: 14px
+      &--center
+        font-size: 16px
+
 @media (max-width: 767px)
   body
     padding-top: 80px
   .header
-    padding: 20px 0 20px 0
+    padding: 20px 0 15px 0
     position: fixed
     top: 0
     left: 0
@@ -187,6 +212,9 @@
       line-height: 2
     &__button
       font-size: 12px
+    &__image-wrapper
+      margin-right: 0
+
   .geography
     &__title
       font-size: 20px
@@ -232,6 +260,7 @@
         flex-basis: 100%
     &__map-blocks
       flex-basis: 100%
+      margin-right: 0
     &__address
       &-wrapper
         justify-content: space-evenly
@@ -239,8 +268,30 @@
   .map
     width: 100%
 
-  .swiper-container
+  .methods-container
     min-height: 650px
+
+  .technologies
+    &__image-wrapper
+      // max-width: 65%
+      margin-right: 0
+  .method-grp
+    &__image-wrapper
+      max-width: 65%
+    &__slide
+      flex-direction: column
+    &__images
+      max-width: 75%
+    &__text-wrapper
+      max-width: 100%
+    &__text,&__item
+      font-size: 14px
+  .grp-container
+    min-height: 600px
+
+  .method-msi
+    &__text,&__item
+      font-size: 14px
 
 @media ( max-width: 576px )
   .hero
@@ -327,7 +378,7 @@
     &__link
       font-size: 14px
 
-  .swiper-container
+  .methods-container
     min-height: 700px
 
   .company
@@ -335,8 +386,64 @@
       font-size: 20px
     &__text, &__item
       font-size: 13px
-    &__wrapper
-      gap: 10px
+
+  .technologies
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 12px
+      &--center
+        font-size: 14px
+  .method-grp
+    &__title
+      font-size: 20px
+    &__text, &__item
+      font-size: 12px
+    &__gif
+      width: 350px
+    &__list-title, &__text-title
+      font-size: 14px
+    &__images
+      margin: 0
+      margin-bottom: 20px
+    &__text-wrapper
+      margin: 0
+    &__description
+      max-width: 100%
+      font-size: 12px
+    &__text-title
+      margin-bottom: 15px
+    &__results
+      padding-left: 20px
+      padding-right: 20px
+
+  .method-msi
+    &__image-wrapper
+      flex-wrap: wrap
+      max-width: 80%
+    &__title
+      font-size: 20px
+    &__text
+      font-size: 12px
+      &-title
+        font-size: 14px
+    &__list-title, &__item, &__description
+      font-size: 12px
+    &__slide
+      flex-direction: column
+    &__swiper
+      min-height: 670px
+    &__images
+      margin-bottom: 20px
+    &__comment
+      font-size: 11px
+    &__results
+      padding-left: 20px
+    &__spectrums
+      margin-right: 0
+      margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
 
 @media ( max-height: 487px )
   .mobile
@@ -445,3 +552,26 @@
       font-size: 12px
     &__info
       margin-top: 160px
+
+  .technologies
+    &__image-wrapper
+      max-width: 100%
+
+  .method-grp
+    &__gif
+      width: 95%
+      height: 100%
+      margin-top: 20px
+    &__images
+      margin: 0
+
+  .method-msi
+    &__swiper
+      min-height: 680px
+    &__description
+      margin-right: 0
+
+@media ( max-width: 320px )
+  .method-msi
+    &__swiper
+      min-height: 750px

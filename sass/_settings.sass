@@ -6,7 +6,6 @@
   line-height: 1.7
 
 body
-  // background-color: rgba(236,240,241,.2)
   background-color: #f2f6fd
 
 h1, h2, h3, h4
@@ -16,7 +15,10 @@ h1, h2, h3, h4
 img
   width: 100%
 
-.swiper-container
+.methods-container
+  height: 550px
+
+.grp-container
   height: 550px
 
 .hidden
@@ -25,15 +27,6 @@ img
   display: none
 
 @media screen and ( min-width: 992px )
-  // .swiper-button-next,
-  // .swiper-button-prev
-  //   outline: none
-  //   cursor: pointer
-  //   color: hsla(0,0%,100%,1)
-  //   // transition: 0.4s
-  //   &:hover
-  //     color: $primary
-  //     box-shadow: 0 0 12px hsla(0,0%,100%,1)
   a
     outline: none
     cursor: pointer
@@ -57,5 +50,10 @@ img
   width: 100%
   height: 100%
   background-color: transparent
-  // backdrop-filter: blur(3px)
   z-index: 55
+
+.invalid
+  color: #EC1F46
+  border-bottom: 1px solid #EC1F46
+  font-size: 11px
+  position: relative

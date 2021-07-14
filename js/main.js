@@ -19,10 +19,10 @@ $(document).ready(function () {
       onlyInViewport: false,
     },
 
-    // autoplay: {
-    //   delay: 4000,
-    //   disableOnInteraction: true,
-    // },
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: true,
+    },
   });
 
   //open mobile-menu
@@ -39,15 +39,7 @@ $(document).ready(function () {
   function closeMobileMenu(event) {
     event.preventDefault();
     $(".mobile").removeClass("mobile--visible");
-    // $("body").toggleClass("hidden");
   }
-  // $(document).on('keydown', function(e) {
-  //     if (e.keyCode === 27) {
-  //         let mobileMenu = $(".mobile");
-  //         mobileMenu.removeClass("mobile--visible");
-  //         $("body").toggleClass("hidden");
-  //     }
-  // });
 
   //preventDefault for geography
   const linkItem = document.querySelectorAll(".geography__map-link");
@@ -55,6 +47,24 @@ $(document).ready(function () {
   linkItem.forEach(function (links) {
     links.addEventListener("click", function (e) {
       e.preventDefault();
+    });
+  });
+
+  //form processing
+
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Пожалуйста, укажите ваше имя",
+          minlength: "Имя должно содержать минимум 3 символа",
+        },
+        email: {
+          required: "Пожалуйста, укажите ваш e-mail ",
+          email: "Формат e-mail адреса должен быть name@domain.com",
+        },
+      },
     });
   });
 });

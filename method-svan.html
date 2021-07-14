@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no" />
     <title>Мониторинг СВАН</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -35,7 +35,7 @@
         </a>
 
         <nav class="navbar">
-          <ul class="navbar__list">
+         <ul class="navbar__list">
             <li class="navbar__item">
               <a href="index.html" class="navbar__link">Главная</a>
             </li>
@@ -50,9 +50,9 @@
                 <a href="method-grp_sat.html" class="dropdown__link"
                   >Мониторинг СЭТ на малых площадях</a
                 >
-                <a href="method-nat.html" class="dropdown__link"
+                <!-- <a href="method-nat.html" class="dropdown__link"
                   >Мониторинг заводнения</a
-                >
+                > -->
                 <a href="method-svan.html" class="dropdown__link"
                   >Мониторинг СВАН</a
                 >
@@ -109,8 +109,16 @@
           данного явления для прямых поисков залежей нефти и газа.
         </p>
         <div class="method-msi__image-wrapper">
-          <img src="img/msi-method__1.png" alt="" />
-          <img src="img/msi-method__2.png" alt="" />
+          <img
+            class="method-msi__spectrums"
+            src="img/msi-method__1.png"
+            alt=""
+          />
+          <img
+            class="method-msi__spectrums"
+            src="img/msi-method__2.png"
+            alt=""
+          />
         </div>
         <span class="method-msi__comment"
           >Сравнение модельных спектров со спектрами реальных скважин</span
@@ -162,7 +170,7 @@
 
         <div class="method-msi__results">
           <h4 class="method-msi__list-title">Результаты</h4>
-          <div class="swiper-container">
+          <div class="swiper-container method-msi__swiper">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper method-msi__wrapper">
               <!-- Slides -->
