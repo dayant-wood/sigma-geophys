@@ -51,7 +51,6 @@ $(document).ready(function () {
   });
 
   //form processing
-
   $(".form").each(function () {
     $(this).validate({
       errorClass: "invalid",
@@ -67,4 +66,14 @@ $(document).ready(function () {
       },
     });
   });
+
+  //   // // //zoom technlogies photos
+  //   const techImages = document.querySelectorAll(".technologies__image-field");
+  //   console.log(techImages);
+
+  //   techImages.addEventListener("click", function () {
+  //     techImages.forEach(function (images) {
+  //       images.style.height = "500px";
+  //     });
+  //   });
 });
