@@ -1084,6 +1084,7 @@ img {
 
 .method-svan__image-wrapper {
   margin-top: 30px;
+  margin-bottom: 10px;
   flex-direction: row;
   display: flex;
   justify-content: center;
@@ -1169,6 +1170,7 @@ img {
   margin-right: 30px;
   width: 400px;
   align-self: normal;
+  margin-bottom: 20px;
 }
 
 .method-svan__spectrums:last-child {
@@ -1446,7 +1448,7 @@ img {
 .contacts__input {
   padding: 20px 18px;
   border-radius: 4px;
-  font-size: 12px;
+  font-size: 14px;
   outline: none;
   width: 100%;
   border: 1px solid rgba(25, 60, 88, 0.2);
@@ -1811,6 +1813,15 @@ img {
   }
   .technologies__text--center {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 922px) {
+  .method-svan__spectrums {
+    flex-wrap: wrap;
+  }
+  .method-svan__spectrums--first {
+    margin-right: 1px;
   }
 }
 
