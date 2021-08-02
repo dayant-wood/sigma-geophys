@@ -1169,7 +1169,7 @@ img {
 .method-svan__spectrums {
   margin-right: 30px;
   width: 400px;
-  align-self: normal;
+  height: auto;
   margin-bottom: 20px;
 }
 
@@ -1214,16 +1214,6 @@ img {
 
 .method-grp__image {
   object-fit: cover;
-}
-
-.method-grp__image-wrapper {
-  max-width: 40%;
-  margin: auto;
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-gap: 30px;
 }
 
 .method-grp__link {
@@ -1280,13 +1270,25 @@ img {
 
 .method-grp__images {
   flex-basis: 50%;
-  margin-right: 10px;
+  margin-right: 40px;
   margin-left: 25px;
 }
 
 .method-grp__text-wrapper {
   flex-basis: 55%;
   margin-right: 15px;
+  overflow: auto;
+}
+
+.method-grp__image-wrapper {
+  max-width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  /* grid-gap: 30px; */
 }
 
 .method-grp__text-title {
@@ -2006,9 +2008,6 @@ img {
   }
   .method-grp__text, .method-grp__item {
     font-size: 14px;
-  }
-  .grp-container {
-    min-height: 720px;
   }
   .method-svan__text, .method-svan__item {
     font-size: 14px;
